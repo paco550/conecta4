@@ -1,82 +1,64 @@
-Conecta 4 con Reflex en Python
-Este proyecto es una implementación del clásico juego "Conecta 4" utilizando Reflex, un framework para la creación de aplicaciones web en Python.
+# Conecta 4
 
-Descripción
-"Conecta 4" es un juego de estrategia en el que dos jugadores se turnan para dejar caer fichas en una cuadrícula vertical. El objetivo es ser el primero en formar una línea horizontal, vertical o diagonal de cuatro fichas del mismo color.
+¡Bienvenido a **Conecta 4**! Este proyecto es una implementación del clásico juego de mesa "Conecta 4" utilizando [Reflex](https://reflex.dev/), un framework de Python para construir interfaces de usuario interactivas.
 
-Características
-Modo de juego para dos jugadores: Juega contra otro jugador en el mismo dispositivo.
+## Tabla de Contenidos
 
-Interfaz gráfica interactiva: Gracias a Reflex, la interfaz es amigable y fácil de usar.
+- [Descripción](#descripción)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
+- [Agradecimientos](#agradecimientos)
 
-Contador de victorias: Lleva un registro de las partidas ganadas por cada jugador.
+## Descripción
 
-Funciones de reinicio: Permite reiniciar la partida actual o resetear el contador de victorias.
+"Conecta 4" es un juego para dos jugadores en el que se turnan para dejar caer fichas de color en una cuadrícula vertical. El objetivo es ser el primero en formar una línea horizontal, vertical o diagonal de cuatro fichas consecutivas del mismo color.
 
-Requisitos
-Python 3.7 o superior
+Este proyecto busca replicar esa experiencia de manera interactiva y amigable utilizando Reflex.
 
-Reflex
+## Características
 
-Instalación
-Clona este repositorio:
+- **Interfaz Intuitiva**: Diseño limpio y fácil de usar.
+- **Juego en Tiempo Real**: Los jugadores pueden alternar turnos sin retrasos.
+- **Indicador de Turno**: Muestra claramente de quién es el turno actual.
+- **Detección de Ganador**: Identifica automáticamente al ganador y muestra un mensaje de felicitación.
+- **Reinicio de Partida**: Permite reiniciar el juego en cualquier momento.
+- **Contador de Victorias**: Lleva un registro de las victorias de cada jugador.
 
-bash
-Copiar código
-git clone https://github.com/tu_usuario/conecta4-reflex.git
-cd conecta4-reflex
-Instala las dependencias:
+## Instalación
 
-Se recomienda utilizar un entorno virtual para gestionar las dependencias. Puedes crearlo y activarlo con:
+Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
-bash
-Copiar código
-python -m venv env
-source env/bin/activate  # En Windows: env\Scripts\activate
-Luego, instala Reflex:
+1. **Clona el repositorio**:
 
-bash
-Copiar código
-pip install reflex
-Uso
+    ```bash
+    git clone https://github.com/tu_usuario/conecta_4.git
+    ```
+
+2. **Navega al directorio del proyecto**:
+
+    ```bash
+    cd conecta_4
+    ```
+
+3. **Crea un entorno virtual (opcional pero recomendado)**:
+
+    ```bash
+    python -m venv env
+    source env/bin/activate  # En Windows usa 'env\Scripts\activate'
+    ```
+
+4. **Instala las dependencias**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Uso
+
 Para iniciar la aplicación, ejecuta:
 
-bash
-Copiar código
+```bash
 python main.py
-Luego, abre tu navegador y visita http://localhost:8000 para jugar.
-
-Estructura del proyecto
-main.py: Contiene la lógica principal del juego y la definición de la interfaz utilizando Reflex.
-
-README.md: Este archivo, que proporciona información sobre el proyecto.
-
-Contribuciones
-Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor, sigue estos pasos:
-
-Haz un fork del repositorio.
-
-Crea una nueva rama:
-
-bash
-Copiar código
-git checkout -b feature/nueva-funcionalidad
-Realiza tus cambios y haz commit:
-
-bash
-Copiar código
-git commit -m "Añadir nueva funcionalidad"
-Envía tus cambios al repositorio remoto:
-
-bash
-Copiar código
-git push origin feature/nueva-funcionalidad
-Abre una pull request explicando tus cambios.
-
-Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
-Agradecimientos
-Agradecemos a la comunidad de Reflex por proporcionar herramientas que facilitan el desarrollo de aplicaciones web en Python.
-
-¡Disfruta jugando al Conecta 4 y feliz programación!
