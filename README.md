@@ -61,4 +61,5 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 Para iniciar la aplicación, ejecuta:
 
 ```bash
-python main.py
+reflex init
+reflex run
